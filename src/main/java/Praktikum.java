@@ -1,3 +1,5 @@
+import io.qameta.allure.Step;
+
 public class Praktikum {
     public static void main(String[] args) {
         /*
@@ -7,6 +9,7 @@ public class Praktikum {
          */
         String nameSurname = "Тимоти Шаламе";
         Account account = new Account(nameSurname);
+
         boolean isValid = account.checkNameToEmboss();
         if (isValid) {
             System.out.println("Можно использовать фамилию и имя для печати на банковской карте.");
